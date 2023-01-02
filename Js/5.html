@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sum()">Click</button>
+    <script>
+        var a=parseInt(prompt("Enter a number"))
+        function sum(){
+            var s=0,r
+            while(a!=0){
+                r=a%10
+                s+=r
+                a=Math.floor(a/10)
+            }
+            document.write("Sum of digit is ",s)
+        }
+
+    </script>
+</body>
+</html>
